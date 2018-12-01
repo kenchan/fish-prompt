@@ -11,5 +11,5 @@ Simple fish prompt for Rubyist.
 With fisherman
 
 ```sh
-fisher install kenchan/fish-prompt
+fisher add kenchan/fish-prompt
 ```
