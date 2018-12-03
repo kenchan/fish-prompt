@@ -1,7 +1,7 @@
 function fish_prompt
   set -l right_prompt (set_color magenta)'['(date +%H:%M)']' (set_color $fish_color_cwd --bold)(prompt_pwd)(set_color normal)
 
-  if test -n "$RBENV_ROOT"
+  if set -q RBENV_ROOT; or set -q __RBENV_SUPPORTS_FISH
     set right_prompt $right_prompt (set_color red --bold)'('(rbenv version-name)')'(set_color normal)
   end
 
